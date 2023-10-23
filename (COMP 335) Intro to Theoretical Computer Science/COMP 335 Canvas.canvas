@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"d1b9c961810f2b18","type":"text","text":"# Intro to Theoretical Computer Science\n### COMP 335","x":-160,"y":-180,"width":380,"height":140,"color":"5"},
+		{"id":"bb6400bf6b703010","type":"text","text":"# Finite Automata","x":460,"y":-135,"width":310,"height":50,"color":"2"},
+		{"id":"3b2b6bedbb645fe1","type":"text","text":"# Grammars","x":-680,"y":-135,"width":310,"height":50,"color":"2"},
+		{"id":"95c4fd20496e041f","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/CFG.md","x":-1400,"y":-40,"width":400,"height":94},
+		{"id":"04fd10dd338f8069","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/Grammars.md","x":-1400,"y":-225,"width":400,"height":45},
+		{"id":"3a3b5d48f1e0057c","type":"text","text":"# Regular Languages","x":-147,"y":80,"width":355,"height":50,"color":"2"},
+		{"id":"f39d5d2957cd2b08","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/Closure Properties.md","x":120,"y":280,"width":400,"height":94},
+		{"id":"c61603cb8e0b4cef","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/Regular Languages.md","x":-525,"y":280,"width":440,"height":94},
+		{"id":"59f18b73dd299b81","type":"text","text":"# Proof Methods\n","x":-525,"y":-416,"width":310,"height":45,"color":"2"},
+		{"id":"6a2e73650952cb46","type":"text","text":"# Fundementals\n","x":150,"y":-416,"width":310,"height":50,"color":"2"},
+		{"id":"97be1d02fd1eb7d1","x":85,"y":-1027,"width":440,"height":419,"type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/Powersets.md"},
+		{"id":"b1d9c83964a0d784","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/Pumping Lemma.md","x":-635,"y":-1075,"width":530,"height":516},
+		{"id":"ad2b1b5d2a45dbd3","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/DFA.md","x":1000,"y":-557,"width":500,"height":447},
+		{"id":"1705710683bb47b7","type":"file","file":"(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md","x":1000,"y":-78,"width":500,"height":423}
+	],
+	"edges":[
+		{"id":"97b313318b1ce77a","fromNode":"d1b9c961810f2b18","fromSide":"right","toNode":"bb6400bf6b703010","toSide":"left"},
+		{"id":"f42e535bf396cf2d","fromNode":"bb6400bf6b703010","fromSide":"right","toNode":"ad2b1b5d2a45dbd3","toSide":"left"},
+		{"id":"754be0db8a7868b2","fromNode":"bb6400bf6b703010","fromSide":"right","toNode":"1705710683bb47b7","toSide":"left"},
+		{"id":"669e0a1d44c8b2af","fromNode":"d1b9c961810f2b18","fromSide":"left","toNode":"3b2b6bedbb645fe1","toSide":"right"},
+		{"id":"418a034e98b18bbf","fromNode":"3b2b6bedbb645fe1","fromSide":"left","toNode":"04fd10dd338f8069","toSide":"right"},
+		{"id":"5c254bc151f79222","fromNode":"3b2b6bedbb645fe1","fromSide":"left","toNode":"95c4fd20496e041f","toSide":"right"},
+		{"id":"c81b46ccc45c61c0","fromNode":"59f18b73dd299b81","fromSide":"top","toNode":"b1d9c83964a0d784","toSide":"bottom"},
+		{"id":"f5f6512c8a950e19","fromNode":"d1b9c961810f2b18","fromSide":"top","toNode":"59f18b73dd299b81","toSide":"bottom"},
+		{"id":"39bb9bb7fb5d726c","fromNode":"d1b9c961810f2b18","fromSide":"bottom","toNode":"3a3b5d48f1e0057c","toSide":"top"},
+		{"id":"ecc5398211906896","fromNode":"3a3b5d48f1e0057c","fromSide":"bottom","toNode":"c61603cb8e0b4cef","toSide":"top"},
+		{"id":"7def49cc1040f219","fromNode":"3a3b5d48f1e0057c","fromSide":"bottom","toNode":"f39d5d2957cd2b08","toSide":"top"},
+		{"id":"d5af3b735bd569fa","fromNode":"d1b9c961810f2b18","fromSide":"top","toNode":"6a2e73650952cb46","toSide":"bottom"},
+		{"id":"684b5bec8386ff7f","fromNode":"6a2e73650952cb46","fromSide":"top","toNode":"97be1d02fd1eb7d1","toSide":"bottom"}
+	]
+}
