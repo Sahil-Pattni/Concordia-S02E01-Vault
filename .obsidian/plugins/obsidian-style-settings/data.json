@@ -1,0 +1,18 @@
+{
+  "ul-theme-settings@@ul-theme-light": "ul-obplus-lt",
+  "ul-theme-settings@@ul-theme-dark": "ul-amoled-dt",
+  "ul-theme-settings@@font-title": "Nightingale",
+  "ul-theme-settings@@responsive-text": 1,
+  "ul-theme-settings@@ul-header-size": "ul-headings-opn",
+  "ul-theme-settings@@ul-colorful-headings": false,
+  "ul-theme-settings@@ul-header-line-accent": "var(--background-modifier-border)",
+  "ul-theme-settings@@ul-header-line-h1": false,
+  "ul-theme-settings@@ul-header-line-h2": true,
+  "ul-theme-settings@@grad": false,
+  "ul-theme-settings@@ul-bar": false,
+  "ul-theme-settings@@ul-scrollbars": false,
+  "ul-theme-settings@@ul-notitle": false,
+  "ul-theme-settings@@ul-fancy-canvas-4": "none",
+  "ul-theme-settings@@ul-accent-title": false,
+  "ul-theme-settings@@ul-canvas-center": false
+}

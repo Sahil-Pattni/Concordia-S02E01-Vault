@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "b67f4c8839d3cffc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7574ccf2deca3f1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "deced90e67a1dbbf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "viewState": {
+                  "x": 720.657777297584,
+                  "y": -270.58488737818504,
+                  "zoom": -0.33027786218176985
+                }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d9443d5505c45cff",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "(COMP 335) Intro to Theoretical Computer Science/COMP 335 Canvas.canvas",
+                "viewState": {
+                  "x": 580.3331265097503,
+                  "y": -431.9058369476701,
+                  "zoom": -0.7474774320113042
+                }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0ac2296bab17ba7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "19aca5bf0160b465",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9732ce655b8bebb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1094dd1d769c9fce",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4f4217281c12522b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fd671a399847c15d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "3f1ce05f163026dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "1743e9641db29e16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "251f5355b3a859b3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "53f8daaf731e077a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1e3b03166b237f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e3696bfc86ac154b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas"
+              }
+            }
+          },
+          {
+            "id": "ef120c6a85cd6083",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9496c2e9bc219fd2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 446.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "deced90e67a1dbbf",
+  "lastOpenFiles": [
+    "(COMP 335) Intro to Theoretical Computer Science/COMP 335 Canvas.canvas",
+    "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/DFA.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Closure Properties.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Powersets.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Pumping Lemma.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Research Project.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Regular Languages.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/CFG.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Untitled.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Grammars.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts",
+    "(COMP 335) Intro to Theoretical Computer Science",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/DeepQoE - Real-time Measurement of Video QoE from Encrypted Traffic with Deep Learning.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Papers/DeepQoE- Real-time Measurement of Video QoE from Encrypted Traffic with Deep Learning.pdf",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Video QoE Inference with Machine Learning.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Papers/Video QoE Inference with Machine Learning.pdf",
+    "Untitled.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/ViCrypt.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Papers/ViCrypt to the Rescue- Real-time, Machine-Learning-driven Video-QoE Monitoring for Encrypted Streaming Traffic.pdf",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Estimating WebRTC.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Using Session Modelling - Summary.md",
+    "Templates/AI for Multimedia Systems/Paper Summary Template.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Papers/Estimating WebRTC Video QoE Metrics Without Using Application Headers.pdf",
+    "(COMP 691) AI for Multimedia Systems/Project/Papers/Using Session Modeling.pdf",
+    "Templates/AI for Multimedia Systems/Paper Analysis Template.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview",
+    "(COMP 691) AI for Multimedia Systems/Rough Notes.md",
+    "AI for Multimedia Systems/Paper Reviews/Lecture 6.md",
+    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Computers Can Learn from the Heuristic Designs and Master Internet Congestion Control.md",
+    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Classic Meets Modern - a Pragmatic Learning-Based Congestion Control for the Internet.md",
+    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Saliency-Driven Quality Adaptation.md",
+    "Templates/Course Introduction Template.md",
+    "(COMP 691) AI for Multimedia Systems/out/Summary___NeuroScaler.pdf",
+    "(COMP 691) AI for Multimedia Systems/out/Discussion___NeuroScaler.pdf",
+    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Buffer Awareness Neural Adaptive Video Streaming.md"
+  ]
+}
