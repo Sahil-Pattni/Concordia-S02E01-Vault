@@ -23,5 +23,23 @@
       ],
       "key": "T"
     }
+  ],
+  "theme:use-dark": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": "'"
+    }
+  ],
+  "theme:use-light": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Shift"
+      ],
+      "key": ";"
+    }
   ]
 }

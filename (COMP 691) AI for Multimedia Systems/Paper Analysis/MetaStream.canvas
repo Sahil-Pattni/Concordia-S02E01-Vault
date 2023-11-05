@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"edd10a77d752038b","type":"text","text":"# MetaStream","x":-125,"y":-30,"width":265,"height":50,"color":"2"},
+		{"id":"38350b5bd72fccbc","type":"text","text":"## Overview\n\nMetaStream is the first practical live volumetric content capture, creation, delivery, and rendering system for immersive applications such as virtual, augmented, and mixed reality.\n\nMetaStream achieves low-latency live volumetric video streaming at close to 30 frames per second on WiFi networks.","x":-191,"y":-480,"width":398,"height":320,"color":"5"},
+		{"id":"b8f7bb4ae36a740d","type":"text","text":"## Notes\n- Paves the road for live holographic content.\n- Provides 6DoF.","x":-720,"y":-460,"width":360,"height":300},
+		{"id":"00b55d98e551fee5","type":"text","text":"## Key Insights\n- Achieves low-latency volumetric video streaming at 30 fps (on WiFi).","x":-1160,"y":-130,"width":360,"height":240},
+		{"id":"ade166973af9e7ff","type":"text","text":"### Dynamic Camera Calibration\nCameras (and their relative positions) need to be calibrated so the 3D content can be rendered accurately. This can be addressed in a trivial way by having the cameras remain stationary post-calibration.\n\nHowever, in volumetric video streaming, it may be the case that the cameras may need to move (e.g. drones). To resolve this issue, MetaStream introduces a dynamic online calibration system that allows for the movement of cameras during live-streaming.\n\nBy adopting ORB-feature extraction and via tracking algorithms, they are able to update the 6DoF pose of each camera in real-time.","x":1011,"y":-626,"width":462,"height":417},
+		{"id":"1abdc9889f179d95","type":"text","text":"### Cross-camera Redundant Point Removal\nThere can be a significant overlap in the FoV of multiple cameras, which generates a lot of redundant data. To address this, the authors design a method to delete these redundant points, simultaneously improving the visual quality of the point cloud and also reducing the transmission data size.","x":1011,"y":-127,"width":462,"height":234},
+		{"id":"5b6317b9087d7e08","type":"text","text":"### Foveated Volumetric Content Rendering\nThe authors propose a method that adaptively renders volumetric content with varying levels of detail based on where the user is looking. This reduces the transmission overhead requirement to stream volumetric video.","x":1011,"y":170,"width":462,"height":204},
+		{"id":"de9def074356a556","type":"text","text":"## Concepts","x":531,"y":-35,"width":200,"height":60,"color":"5"},
+		{"id":"261a347907ce099f","type":"text","text":"### Volumetric Video\nVolumetric video is an emerging media format that captures a subject in three dimensions but allows playback from any conceivable angle. Volumetric video is much different than 3D movies or 360-degree video in that a user can experience a recording with six degrees of freedom (6DoF), including X, Y, and Z axes, in addition to pitch, yaw, and roll. This freedom allows users to _experience,_ rather than watch, a recorded event through VR (virtual reality) or AR (augmented reality) headsets.","x":400,"y":-548,"width":462,"height":339},
+		{"id":"8c0ad107e67266e0","type":"text","text":"### Edge-assisted Object Segmentation\nThe authors design a selective segmentation tool on the smart cameras to segment out target objects from complex backgrounds with low overhead.","x":400,"y":303,"width":462,"height":143},
+		{"id":"6b7f76334654fbb4","type":"text","text":"## System\n1. Cameras with computational resources (smart-cameras).\n2. Server for stitching together 3D meshes.\n3. MR (mixed-reality) client to render real-time volumetric video space in 3D.","x":-105,"y":184,"width":490,"height":396},
+		{"id":"6c48c73e3c96cb75","x":-582,"y":184,"width":444,"height":396,"type":"text","text":"## Limitations\n- The dynamic camera calibration makes two key assumptions:\n\t1. The movement speed of each camera must be $\\leq 4.2\\ m/s$ ($\\approx 15\\ km/h$). Events with rapid movement (e.g. action sequences or sporting events) will not be able to utilize this camera positional synchronization technique.\n\t2. The scene should contain rich feature points.\n- MetaStream is not optimized for scenarios where there are multiple receivers."}
+	],
+	"edges":[
+		{"id":"0bf4199adb7c7603","fromNode":"edd10a77d752038b","fromSide":"right","toNode":"de9def074356a556","toSide":"left"},
+		{"id":"33491341fb41d4e6","fromNode":"edd10a77d752038b","fromSide":"top","toNode":"38350b5bd72fccbc","toSide":"bottom"},
+		{"id":"949270e57d7418d3","fromNode":"edd10a77d752038b","fromSide":"left","toNode":"b8f7bb4ae36a740d","toSide":"bottom"},
+		{"id":"b4ecf24bc8a71b49","fromNode":"edd10a77d752038b","fromSide":"left","toNode":"00b55d98e551fee5","toSide":"right"},
+		{"id":"a200748280c5dd20","fromNode":"edd10a77d752038b","fromSide":"bottom","toNode":"6b7f76334654fbb4","toSide":"top"},
+		{"id":"fb7ccf0134b48939","fromNode":"de9def074356a556","fromSide":"bottom","toNode":"5b6317b9087d7e08","toSide":"left"},
+		{"id":"8321fe20ea55eab8","fromNode":"de9def074356a556","fromSide":"right","toNode":"1abdc9889f179d95","toSide":"left"},
+		{"id":"42fd2662570786ac","fromNode":"de9def074356a556","fromSide":"right","toNode":"ade166973af9e7ff","toSide":"left"},
+		{"id":"efdd8d69997f2632","fromNode":"de9def074356a556","fromSide":"top","toNode":"261a347907ce099f","toSide":"bottom"},
+		{"id":"408e27fa87d9c800","fromNode":"de9def074356a556","fromSide":"bottom","toNode":"8c0ad107e67266e0","toSide":"top"},
+		{"id":"24401e3300721555","fromNode":"edd10a77d752038b","fromSide":"bottom","toNode":"6c48c73e3c96cb75","toSide":"top"}
+	]
+}

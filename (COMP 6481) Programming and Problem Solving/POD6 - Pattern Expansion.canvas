@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"7b00be367f1dc500","type":"text","text":"### INPUT\nType: `String`","x":-90,"y":-360,"width":250,"height":100,"color":"6"},
+		{"id":"9720850bbc2c0ee6","type":"text","text":"`f(String s, int n)`","x":-175,"y":-180,"width":420,"height":60,"color":"6"},
+		{"id":"8f25e36a646e1eb7","type":"text","text":"$\\forall c \\in s$","x":-90,"y":-60,"width":250,"height":60},
+		{"id":"c6988143763d7023","type":"text","text":"Extract pattern","x":75,"y":130,"width":250,"height":60},
+		{"id":"3c8090b0a8c4bc4b","type":"text","text":"add `c` to final string.","x":-584,"y":323,"width":250,"height":60},
+		{"id":"fdbd39dbd44fc744","type":"text","text":"add `c` to final string `n` times.","x":-240,"y":323,"width":250,"height":60},
+		{"id":"f7f3badf242bae3f","type":"text","text":"","x":-334,"y":140,"width":96,"height":50},
+		{"id":"2c6bb5522653b118","type":"text","text":"return final string","x":-90,"y":560,"width":250,"height":60,"color":"4"},
+		{"id":"905cd4014d1a0bfb","type":"text","text":"remove first `{` and last `}`, and remove all `,`","x":245,"y":287,"width":250,"height":73},
+		{"id":"daeeece85833e957","x":495,"y":100,"width":250,"height":120,"type":"text","text":"add result of recursive call to final string. Multiply `n` by new `n` in pattern."}
+	],
+	"edges":[
+		{"id":"2266e6d24b6f361f","fromNode":"7b00be367f1dc500","fromSide":"bottom","toNode":"9720850bbc2c0ee6","toSide":"top","color":"6"},
+		{"id":"8d188bc2f0fed800","fromNode":"c6988143763d7023","fromSide":"bottom","toNode":"905cd4014d1a0bfb","toSide":"top"},
+		{"id":"fc6e224ca053c873","fromNode":"9720850bbc2c0ee6","fromSide":"bottom","toNode":"8f25e36a646e1eb7","toSide":"top"},
+		{"id":"1a649aba1ea6b50c","fromNode":"8f25e36a646e1eb7","fromSide":"bottom","toNode":"c6988143763d7023","toSide":"top","label":"if c is `{`"},
+		{"id":"040da37703930f8c","fromNode":"8f25e36a646e1eb7","fromSide":"bottom","toNode":"2c6bb5522653b118","toSide":"top","label":"end for loop"},
+		{"id":"bcc2c23489ac14fe","fromNode":"8f25e36a646e1eb7","fromSide":"bottom","toNode":"f7f3badf242bae3f","toSide":"top","label":"if c is letter"},
+		{"id":"9cfc89b6625db815","fromNode":"f7f3badf242bae3f","fromSide":"bottom","toNode":"3c8090b0a8c4bc4b","toSide":"top","label":"n == 1"},
+		{"id":"de8fe749e9398aea","fromNode":"f7f3badf242bae3f","fromSide":"bottom","toNode":"fdbd39dbd44fc744","toSide":"top","label":"n > 1"},
+		{"id":"6116145f0e3524f9","fromNode":"905cd4014d1a0bfb","fromSide":"right","toNode":"daeeece85833e957","toSide":"bottom"},
+		{"id":"cf9b38c9e3a7c29d","fromNode":"daeeece85833e957","fromSide":"top","toNode":"8f25e36a646e1eb7","toSide":"right"}
+	]
+}

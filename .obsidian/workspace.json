@@ -4,50 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "e7574ccf2deca3f1",
+        "id": "dfa95a33ffc7c1e2",
         "type": "tabs",
         "children": [
           {
-            "id": "deced90e67a1dbbf",
+            "id": "47d34bbcb81564a3",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "file": "(COMP 691) Presentation/Outline.canvas",
                 "viewState": {
-                  "x": 720.657777297584,
-                  "y": -270.58488737818504,
-                  "zoom": -0.33027786218176985
+                  "x": 10,
+                  "y": -200,
+                  "zoom": -1.2291339992155033
                 }
               },
               "pinned": true
             }
           },
           {
-            "id": "d9443d5505c45cff",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "(COMP 335) Intro to Theoretical Computer Science/COMP 335 Canvas.canvas",
-                "viewState": {
-                  "x": 580.3331265097503,
-                  "y": -431.9058369476701,
-                  "zoom": -0.7474774320113042
-                }
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "0ac2296bab17ba7e",
+            "id": "8aa4848fb5333494",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md",
+                "file": "(COMP 691) Presentation/Learned Video Compression.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +55,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -103,7 +86,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3f1ce05f163026dc",
@@ -144,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas"
+                "file": "(COMP 691) Presentation/Outline.canvas"
               }
             }
           },
@@ -154,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "file": "(COMP 691) Presentation/Outline.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+                "file": "(COMP 691) Presentation/Outline.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,47 +177,63 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "deced90e67a1dbbf",
+  "active": "47d34bbcb81564a3",
   "lastOpenFiles": [
+    "(COMP 691) Presentation/Learned Video Compression.md",
+    "(COMP 691) Presentation/Outline.canvas",
+    "(COMP 691) Presentation/Blank.md",
+    "(COMP 691) AI for Multimedia Systems/Papers/Paper Summaries.canvas",
+    "(COMP 691) AI for Multimedia Systems/Papers/A Buffer-Based Approach to Rate Adaptation Evidence from a Large Video Streaming Service.pdf",
+    "(COMP 691) AI for Multimedia Systems/Papers/bba.pdf",
+    "(COMP 691) AI for Multimedia Systems/Papers/Neural Adaptive Video Streaming with Pensieve.pdf",
+    "(COMP 691) AI for Multimedia Systems/Papers/pensieve.pdf",
+    "(COMP 691) AI for Multimedia Systems/Papers/Buffer Awareness Neural Adaptive Video Streaming for Avoiding Extra Buffer Consumption.pdf",
     "(COMP 335) Intro to Theoretical Computer Science/COMP 335 Canvas.canvas",
-    "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Linear Grammars.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Pushdown Automatas (PDAs).md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Chomsky Normal Form (CNF).md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Simplifications of CFGs.md",
+    "Untitled.canvas",
+    "Templates/AI for Multimedia Systems/base template.md",
+    "(COMP 691) Presentation/css/slide-template.css",
+    "(COMP 691) Presentation/css",
+    "(COMP 691) Presentation/images/Joint Compression.png",
+    "(COMP 691) Presentation/images/Screenshot 2023-10-31 at 3.51.25 PM.png",
+    "(COMP 691) Presentation/images/Motion Compensation.png",
+    "(COMP 691) AI for Multimedia Systems/Papers/Learned Video Compression.pdf.sb-31913cc4-Jl73h4",
+    "(COMP 691) Presentation/images/Screenshot 2023-10-31 at 3.37.04 PM.png",
+    "(COMP 691) Presentation/images",
+    "(COMP 691) Presentation/untitled folder",
+    "(COMP 691) AI for Multimedia Systems/Paper Analysis/MetaStream.canvas",
+    "(COMP 6481) Programming and Problem Solving/POD6 - Pattern Expansion.canvas",
     "(COMP 335) Intro to Theoretical Computer Science/Concepts/DFA.md",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Closure Properties.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/CFG.md",
+    "Templates/presentation/tpl-footer.md",
+    "Templates/AI for Multimedia Systems/Paper Summary Template.md",
+    "Templates/presentation/test.md",
+    "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
+    "slideshows/Sample/plugin/chalkboard/README.md",
+    "slideshows/Sample/plugin/chalkboard/img/blackboard.png",
+    "slideshows/Sample/plugin/chalkboard/img/boardmarker-black.png",
+    "slideshows/Sample/plugin/chalkboard/img/boardmarker-blue.png",
+    "slideshows/Sample/plugin/chalkboard/img/boardmarker-green.png",
+    "slideshows/Sample/plugin/chalkboard/img/boardmarker-orange.png",
+    "slideshows/Sample/plugin/chalkboard/img/whiteboard.png",
+    "slideshows/Sample/plugin/chart/README.md",
+    "slideshows/Sample/plugin/customcontrols/README.md",
+    "slideshows/Sample/plugin/menu/CONTRIBUTING.md",
+    "slideshows/Sample/plugin/menu/README.md",
     "(COMP 335) Intro to Theoretical Computer Science/Concepts/Powersets.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Regular Languages.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Closure Properties.md",
+    "(COMP 335) Intro to Theoretical Computer Science/Concepts/NFA.md",
     "(COMP 335) Intro to Theoretical Computer Science/Concepts/Pumping Lemma.md",
     "(COMP 691) AI for Multimedia Systems/Project/Research Project.md",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Regular Languages.md",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts/CFG.md",
     "(COMP 335) Intro to Theoretical Computer Science/Untitled.md",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts/Grammars.md",
-    "(COMP 335) Intro to Theoretical Computer Science/Concepts",
-    "(COMP 335) Intro to Theoretical Computer Science",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/DeepQoE - Real-time Measurement of Video QoE from Encrypted Traffic with Deep Learning.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Papers/DeepQoE- Real-time Measurement of Video QoE from Encrypted Traffic with Deep Learning.pdf",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Video QoE Inference with Machine Learning.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Papers/Video QoE Inference with Machine Learning.pdf",
-    "Untitled.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/ViCrypt.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Papers/ViCrypt to the Rescue- Real-time, Machine-Learning-driven Video-QoE Monitoring for Encrypted Streaming Traffic.pdf",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Estimating WebRTC.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/Using Session Modelling - Summary.md",
-    "Templates/AI for Multimedia Systems/Paper Summary Template.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Papers/Estimating WebRTC Video QoE Metrics Without Using Application Headers.pdf",
-    "(COMP 691) AI for Multimedia Systems/Project/Papers/Using Session Modeling.pdf",
-    "Templates/AI for Multimedia Systems/Paper Analysis Template.md",
-    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview",
-    "(COMP 691) AI for Multimedia Systems/Rough Notes.md",
-    "AI for Multimedia Systems/Paper Reviews/Lecture 6.md",
-    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Computers Can Learn from the Heuristic Designs and Master Internet Congestion Control.md",
-    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Classic Meets Modern - a Pragmatic Learning-Based Congestion Control for the Internet.md",
-    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Saliency-Driven Quality Adaptation.md",
-    "Templates/Course Introduction Template.md",
-    "(COMP 691) AI for Multimedia Systems/out/Summary___NeuroScaler.pdf",
-    "(COMP 691) AI for Multimedia Systems/out/Discussion___NeuroScaler.pdf",
-    "AI for Multimedia Systems/Paper Reviews/Reading & Discussion/Buffer Awareness Neural Adaptive Video Streaming.md"
+    "(COMP 691) AI for Multimedia Systems/Project/Paper Overview/DeepQoE - Real-time Measurement of Video QoE from Encrypted Traffic with Deep Learning.md"
   ]
 }

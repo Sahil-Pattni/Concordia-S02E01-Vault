@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"f8b208b43d3280d0","type":"text","text":"# PRESENTATION","x":-287,"y":-30,"width":312,"height":50,"color":"5"},
+		{"id":"147654377456fbe2","type":"text","text":"## 1. Domain / Relevant Background","x":-811,"y":-495,"width":524,"height":60,"color":"1"},
+		{"id":"bc93b02cbbdebe94","type":"text","text":"## 4. The Solution (In Detail)","x":-811,"y":480,"width":524,"height":60,"color":"1"},
+		{"id":"f805373f663d7e59","type":"text","text":"## 5. Experimental Results\n> [!Abstract] \n> On standard- definition (SD) videos, HEVC/H.265, AVC/H.264 and VP9 typically produce codes up to 60% larger than the paper's algorithm.\n> \n> On high-definition (HD) 1080p videos, H.265 and VP9 typically produce codes up to 20% larger, and H.264 up to 35% larger.","x":40,"y":480,"width":524,"height":360},
+		{"id":"03b50fa32d61097f","type":"text","text":"## 3. Main Contributions\n> [!Abstract] Novel Architecture for Video Compression\n> 1. Generalizes motion estimation to perform learned compensation beyond simple translations.\n> 2. Maintains a state of arbitrary information learned by the model (instead of strictly relying on previously transmitted frames).\n> 3. Enables jointly compressing all transmitted signals (such as optical flow and residual).","x":360,"y":-30,"width":524,"height":350,"color":"1"},
+		{"id":"fabcbf9268a9038d","type":"text","text":"## Notes\n- The setting for this is low-latency modes where each frame can only rely on past information.","x":520,"y":-435,"width":418,"height":254},
+		{"id":"a90ae20f02bcba8f","type":"text","text":"## 2. Problem Statement & Challenges","x":-120,"y":-495,"width":524,"height":60,"color":"1"},
+		{"id":"b57738249edb33c9","x":1020,"y":-400,"width":640,"height":581,"type":"text","text":"### Compensation Beyond Translation\nTraditional video compression methods mainly focus on how things move from one frame to the next (i.e. motion).\n> [!example] A person walking from the left to the right of the frame\n> Traditional techniques work well here because the motion is predictable.\n\nThere are - however - cases of complex motion where such techniques fail to perform effectively.\n> [!example] A person turning their head sideways\n> Traditional techniques fail here because their prediction is limited to movement only. They can't predict what the side of a person's face looks when they've only seen the front.\n\nThe proposed system mitigates these shortcomings, as it can learn and understand not just movement, but also more complex patterns of changes in video."},
+		{"id":"937badc8194c73c2","type":"text","text":"### Frame Types\n- I-Frame\n- P-Frame\n- B-Frame","x":-750,"y":-720,"width":403,"height":163},
+		{"id":"1378b15088e3f80e","type":"text","text":"### P-Frames\n","x":-1160,"y":-665,"width":240,"height":54,"color":"1"},
+		{"id":"d532b78b18d58115","type":"text","text":"#### Step 1: Motion Compensation\nConsider the current video frame as $x_t$. Instead of transmitting the entire $x_t$ frame, we can compare parts of $x_t$ to previous reference frames.\n\nWe can figure out how much of the current frame as \"*moved*\" compared to the previous frames. We denote this movement information in an **optical flow map** denoted as $f_t$.\n\nTo save on data/processing, not every minute detail of what changed has to be transmitted. Similar areas can be grouped together into **blocks** and transmit information about the larger blocks that have moved.","x":-1640,"y":-1240,"width":540,"height":380},
+		{"id":"2a9652e0fb59ba11","type":"text","text":"#### Step 2: Residual Compression\nConsider the motion compensated approximation of the frame from step 1 as $m_t$. We compress *the difference* between the target frame and $m_t$.\n\n> [!example] Formally\n> $\\Delta_t = x_t - m_t$\n\nThe residual ($\\Delta_t$) is *independently encoded* with an image compression algorithm adapted to the sparsity of the residual.","x":-1000,"y":-1240,"width":540,"height":380},
+		{"id":"28bc3aae34006146","type":"text","text":"## 6. Limitations (3 points required)","x":-1362,"y":-217,"width":524,"height":36,"color":"1"},
+		{"id":"f2c5797ff36184fd","type":"text","text":"## Questions\n- TODO","x":-1362,"y":204,"width":524,"height":160},
+		{"id":"6f3ce796a587a27f","type":"text","text":"## 7. Potential Improvements (3 points req.)","x":-1362,"y":-16,"width":524,"height":60,"color":"1"},
+		{"id":"579b3308f95fedbc","x":1020,"y":346,"width":640,"height":354,"type":"text","text":"### Propagation of a Learned State\nIn traditional codecs, the knowledge about the change is transmitted through optical flow maps and reference frames. These representations are simple and cannot represent a wide range of information. Furthermore, they don't have a good memory for long-term changes.\n\nIn contrast, the proposed system uses a more advanced state of memory that can hold a wider range of information and lover a longer time. This in turn leads to more effective video compression."}
+	],
+	"edges":[
+		{"id":"30625630b6fac357","fromNode":"f8b208b43d3280d0","fromSide":"right","toNode":"03b50fa32d61097f","toSide":"left"},
+		{"id":"d4600e2f579fc882","fromNode":"147654377456fbe2","fromSide":"top","toNode":"937badc8194c73c2","toSide":"bottom"},
+		{"id":"77be912b9d57f8bd","fromNode":"f8b208b43d3280d0","fromSide":"top","toNode":"147654377456fbe2","toSide":"bottom"},
+		{"id":"edcb3949aaf34023","fromNode":"f8b208b43d3280d0","fromSide":"top","toNode":"a90ae20f02bcba8f","toSide":"bottom"},
+		{"id":"7ba4d30394bf5ebc","fromNode":"f8b208b43d3280d0","fromSide":"left","toNode":"28bc3aae34006146","toSide":"right"},
+		{"id":"e217b3b6ac8a6030","fromNode":"f8b208b43d3280d0","fromSide":"left","toNode":"6f3ce796a587a27f","toSide":"right"},
+		{"id":"1d21176369cbfa60","fromNode":"f8b208b43d3280d0","fromSide":"bottom","toNode":"bc93b02cbbdebe94","toSide":"top"},
+		{"id":"dc3c995b1b376732","fromNode":"f8b208b43d3280d0","fromSide":"bottom","toNode":"f805373f663d7e59","toSide":"top"},
+		{"id":"3de650ca026cd911","fromNode":"03b50fa32d61097f","fromSide":"top","toNode":"fabcbf9268a9038d","toSide":"bottom"},
+		{"id":"e9e70a6df665da9f","fromNode":"f8b208b43d3280d0","fromSide":"bottom","toNode":"f2c5797ff36184fd","toSide":"top"},
+		{"id":"1dbf19d0f3fd630d","fromNode":"937badc8194c73c2","fromSide":"left","toNode":"1378b15088e3f80e","toSide":"right"},
+		{"id":"7e68669315e2b9c2","fromNode":"1378b15088e3f80e","fromSide":"top","toNode":"d532b78b18d58115","toSide":"bottom"},
+		{"id":"2d1d7be85c77bd6a","fromNode":"1378b15088e3f80e","fromSide":"top","toNode":"2a9652e0fb59ba11","toSide":"bottom"},
+		{"id":"824a93311ce8b771","fromNode":"d532b78b18d58115","fromSide":"right","toNode":"2a9652e0fb59ba11","toSide":"left","color":"6"},
+		{"id":"41dfd8cecdbdb75c","fromNode":"03b50fa32d61097f","fromSide":"right","toNode":"b57738249edb33c9","toSide":"left"},
+		{"id":"2ca5bea94b7ec491","fromNode":"2a9652e0fb59ba11","fromSide":"right","toNode":"b57738249edb33c9","toSide":"top","color":"6","label":"improvement"},
+		{"id":"7fc88214c1719fcd","fromNode":"03b50fa32d61097f","fromSide":"right","toNode":"579b3308f95fedbc","toSide":"left"}
+	]
+}

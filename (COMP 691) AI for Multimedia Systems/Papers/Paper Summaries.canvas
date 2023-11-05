@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"884773755910f7dd","x":-125,"y":-26,"width":425,"height":50,"color":"5","type":"text","text":"# Introductory Materials"},
+		{"id":"8e89ae5e1c49c876","x":620,"y":-204,"width":250,"height":60,"color":"2","type":"text","text":"## Streaming"},
+		{"id":"63c0c8888c17fc76","x":1140,"y":-460,"width":560,"height":398,"type":"text","text":"### Push Based Streaming\n- Packet-based delivery (mainly for real-time streaming applications).\n- **RTP** (Real-time Transport Protocol)\n\t- Sender $\\rightarrow$ Receiver\n- **RTCP** (RTP Control Protocol)\n\t- UDP, binary.\n\t- Sender $\\rightarrow$ Receiver, Receiver $\\rightarrow$ Sender.\n- **RTSP** (Real-time Streaming Protocol)\n\t- TCP, text.\n\t- Play, pause, record, etc...\n\n**WebRTC** for real-time communication (RTC) via JavaScript APIs. "},
+		{"id":"2f1875871e82951b","x":1165,"y":60,"width":511,"height":349,"type":"text","text":"### HTTP Adaptive Streaming (HAS)\n\nBenefits:\n- Imitation of streaming via short downloads.\n\t- Minimizes download waste.\n\t- Enables monitoring consumption.\n- Improved viewer experience.\n\t- Reduced startup delay (zapping/seeking), frame-skips and stalls.\n\t- Provides adaptation capability based on network conditions and client status.\n"},
+		{"id":"ddecdb9cb336579c","x":1880,"y":11,"width":511,"height":447,"type":"text","text":"### HAS Client: Essential Components\n- **Throughput Estimator**: Estimates the available bandwidth (EWMA, SWMA).\n- **Buffer Controller**: Maintain the playback at a safe level.\n- **Scheduler Controller**: Generate request of and download MPD and each segment.\n- **ABR Controller**: Implement adaptive bitrate (ABR) rule/scheme to perform bitrate selection at each segment download.\n- **Segment Parser**: Parse each downloaded segment and extract required information (codec information, headers, data, etc).\n- **Manifest Parser**: Parse the manifest and extract required information (e.g. duration, available representation, etc...)."}
+	],
+	"edges":[
+		{"id":"3233a181f0700ec0","fromNode":"884773755910f7dd","fromSide":"right","toNode":"8e89ae5e1c49c876","toSide":"left"},
+		{"id":"42dc9ea7e59b859e","fromNode":"8e89ae5e1c49c876","fromSide":"right","toNode":"63c0c8888c17fc76","toSide":"left"},
+		{"id":"9252b48b69f14081","fromNode":"8e89ae5e1c49c876","fromSide":"right","toNode":"2f1875871e82951b","toSide":"left"},
+		{"id":"3bfa74832beb8d86","fromNode":"2f1875871e82951b","fromSide":"right","toNode":"ddecdb9cb336579c","toSide":"left"}
+	]
+}
