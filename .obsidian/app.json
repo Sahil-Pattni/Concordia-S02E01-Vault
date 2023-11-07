@@ -9,5 +9,7 @@
   "propertiesInDocument": "visible",
   "showInlineTitle": false,
   "attachmentFolderPath": "./",
-  "promptDelete": false
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true
 }

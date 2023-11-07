@@ -8,32 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "47d34bbcb81564a3",
+            "id": "c900512c04b11730",
             "type": "leaf",
             "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "(COMP 691) Presentation/Outline.canvas",
-                "viewState": {
-                  "x": 10,
-                  "y": -200,
-                  "zoom": -1.2291339992155033
-                }
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "8aa4848fb5333494",
-            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "(COMP 691) Presentation/Learned Video Compression.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
+            }
+          }
+        ]
+      },
+      {
+        "id": "36ea820021691e53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20fd4e577b9469f2",
+            "type": "leaf",
+            "state": {
+              "type": "reveal-preview-view",
+              "state": {}
             }
           }
         ]
@@ -128,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "(COMP 691) Presentation/Outline.canvas"
+                "file": "(COMP 691) Presentation/Learned Video Compression.md"
               }
             }
           },
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "(COMP 691) Presentation/Outline.canvas",
+                "file": "(COMP 691) Presentation/Learned Video Compression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "(COMP 691) Presentation/Outline.canvas",
+                "file": "(COMP 691) Presentation/Learned Video Compression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,10 +180,60 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "47d34bbcb81564a3",
+  "floating": {
+    "id": "a0d452e8f9319c5c",
+    "type": "floating",
+    "children": [
+      {
+        "id": "8a2f09dd7dff73a4",
+        "type": "window",
+        "children": [
+          {
+            "id": "99c5de1657199f3c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "47d34bbcb81564a3",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "canvas",
+                  "state": {
+                    "file": "(COMP 691) Presentation/Outline.canvas",
+                    "viewState": {
+                      "x": -1243.487400889419,
+                      "y": -1145.0063682479013,
+                      "zoom": -0.18042805989583333
+                    }
+                  },
+                  "pinned": true
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 147,
+        "y": 150,
+        "width": 1440,
+        "height": 816,
+        "maximize": true,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "c900512c04b11730",
   "lastOpenFiles": [
-    "(COMP 691) Presentation/Learned Video Compression.md",
     "(COMP 691) Presentation/Outline.canvas",
+    "(COMP 691) Presentation/Learned Video Compression.md",
+    "(COMP 691) Presentation/images/Train moving behind tree.png",
+    "(COMP 691) Presentation/images/pseudocode.png",
+    "(COMP 691) Presentation/images/Step 2.png",
+    "(COMP 691) Presentation/images/Step 3.png",
+    "(COMP 691) Presentation/images/Step 1.png",
+    "(COMP 691) Presentation/images/Joint Compression - Step 2.png",
+    "(COMP 691) Presentation/images/H.265 Optical Flow Map.png",
+    "(COMP 691) Presentation/images/Optical Flow Maps - Dual.png",
     "(COMP 691) Presentation/Blank.md",
     "(COMP 691) AI for Multimedia Systems/Papers/Paper Summaries.canvas",
     "(COMP 691) AI for Multimedia Systems/Papers/A Buffer-Based Approach to Rate Adaptation Evidence from a Large Video Streaming Service.pdf",
@@ -201,9 +250,7 @@
     "Templates/AI for Multimedia Systems/base template.md",
     "(COMP 691) Presentation/css/slide-template.css",
     "(COMP 691) Presentation/css",
-    "(COMP 691) Presentation/images/Joint Compression.png",
     "(COMP 691) Presentation/images/Screenshot 2023-10-31 at 3.51.25 PM.png",
-    "(COMP 691) Presentation/images/Motion Compensation.png",
     "(COMP 691) AI for Multimedia Systems/Papers/Learned Video Compression.pdf.sb-31913cc4-Jl73h4",
     "(COMP 691) Presentation/images/Screenshot 2023-10-31 at 3.37.04 PM.png",
     "(COMP 691) Presentation/images",
@@ -217,12 +264,6 @@
     "Templates/presentation/test.md",
     "(COMP 691) AI for Multimedia Systems/Project/Research Project Canvas.canvas",
     "slideshows/Sample/plugin/chalkboard/README.md",
-    "slideshows/Sample/plugin/chalkboard/img/blackboard.png",
-    "slideshows/Sample/plugin/chalkboard/img/boardmarker-black.png",
-    "slideshows/Sample/plugin/chalkboard/img/boardmarker-blue.png",
-    "slideshows/Sample/plugin/chalkboard/img/boardmarker-green.png",
-    "slideshows/Sample/plugin/chalkboard/img/boardmarker-orange.png",
-    "slideshows/Sample/plugin/chalkboard/img/whiteboard.png",
     "slideshows/Sample/plugin/chart/README.md",
     "slideshows/Sample/plugin/customcontrols/README.md",
     "slideshows/Sample/plugin/menu/CONTRIBUTING.md",
