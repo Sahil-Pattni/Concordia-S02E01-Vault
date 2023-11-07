@@ -8,7 +8,6 @@ bg: "#ffffff"
 pdfSeparateFragments: "false"
 transition: none
 transitionSpeed: normal
-css: "[css/slide-template.css]"
 ---
 
 # Learned Video Compression
