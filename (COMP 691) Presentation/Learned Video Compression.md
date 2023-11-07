@@ -14,7 +14,6 @@ transitionSpeed: normal
 ### An ML-based video encoding algorithm
 #### Sahil Pattni (40216177)
 
-note: 540 x 943
 
 ---
 ## Traditional Codecs
@@ -149,10 +148,97 @@ residual --> transmitted
 ---
 ## Prediction Frames
 ### Problems?
-+ Purely motion-based translation.
-+ Knowledge limited to optical flow maps and reference frames.
-+ Bandwidth distribution between motion and residual data.
-+ Block matching:
+1) **Bandwidth distribution between motion and residual data.**
+
+note:
+- Every codec must decide.
+
+---
+## Prediction Frames
+#### How to distribute bandwidth?
+![[Step 1.png|600]]
+
+note: 
+- Every codec must decide how to best distribute bandwidth between flow and residual.
+- Best ratio varies frame by frame.
+
+---
+
+## Prediction Frames
+#### Idea: Compress jointly via the same bottleneck?
+
+![[Step 2.png|600]]
++ Learns how to adapt bitrate distribution based on how complex a frame is.
+
+note:
+- varies frame by frame.
+
+---
+## Prediction Frames
+### Problems?
+1. Bandwidth distribution between motion and residual data.
+	- Compress via the same bottleneck.
+2) **Knowledge limited to optical flow maps and reference frames.**
+
+note:
+- All prior memory represented as previously reconstructed frame or the flow.
+- Embedded in raw pixel space. Inefficient, Ineffective.
+---
+## Prediction Frames
+#### Idea: Learnable state $S_t$
+![[Step 3.png|650]]
++ $\geq 1$ tensor(s).
++ Let the model decide how to populate/update.
+
+note:
+- $S_t$ accumulates temporal information.
+- $G(\cdot)$ is a module to compute frame-reconstruction $\hat{x}_t$ from $S_t$.
+
+---
+## Prediction Frames
+### Problems?
+1. Bandwidth distribution between motion and residual data.
+	- Compress via the same bottleneck.
+2. Knowledge limited to optical flow maps and reference frames.
+	- Introduce generic, learnable state $S_t$.
+3) **Purely motion-based translation.**
+
+note:
+- Compensation does not have to be limited to motion.
+- Not just change the arrangement of pixels, but arbitrarily change their values.
+
+---
+## Prediction Frames
+
+![[Train moving behind tree.png|400]]
+I lost my pixels?
+<!-- element class="fragment" data-fragment-index="1" -->
+
+
+
+note:
+- Occlusion patterns break the flow.
+- Pixels disappear and then re-appear.
+
+---
+## Prediction Frames
+#### Arbitrary Compensation
+![[Step 3.png|650]]
++ $G(\cdot)$ can be generalized to generate multiple flows and reference frames.
++ Preserves occlusions.
+
+note:
+- Decompose a complex scene into multiple simple flows.
+---
+## Prediction Frames
+### Problems?
+1. Bandwidth distribution between motion and residual data.
+	- Compress via the same bottleneck.
+2. Knowledge limited to optical flow maps and reference frames.
+	- Introduce generic, learnable state $S_t$.
+3. Purely motion-based translation.
+	1. Decompose into *multiple* flows.
+4) **Block matching:**
 	+ Aggregated motion.
 	+ quantized to specific sub-pixel resolution (e.g. $\frac{1}{2}$, $\frac{1}{4}$, $\frac{1}{8}$)
 
@@ -164,31 +250,12 @@ note:
 
 ---
 ## Prediction Frames
-#### How to distribute bandwidth?
-![[Step 1.png|600]]
 
-note: 
-- Every codec must decide how to best distribute bandwidth between flow and residual.
-- Varies frame by frame.
+![[Optical Flow Maps - Dual.png|500]]
++ **Remember:** We can bandwidth depending on frame complexity.
++ Arbitrary pixel resolution for flow map.
 
 ---
-
-## Prediction Frames
-#### Idea: Compress jointly via the same bottleneck?
-
-![[Step 2.png|600]]
-
-note:
-- varies frame by frame.
-
----
-## Prediction Frames
-#### Idea: Learnable state $S_t$
-![[Step 3.png|650]]
-
-
----
-
 ## Main Contributions
 - Generalizes motion estimation to perform learned compensation beyond simple translations.
 - Maintains a state of arbitrary information learned by the model (instead of strictly relying on previously transmitted frames).
@@ -196,5 +263,61 @@ note:
 - Designed for low-latency environments where each frame can only rely on past information.
 
 
-note: Novel architecture for video compression.
+note:
+Novel architecture for video compression.
 
+---
+
+## Comparison
+![[Reconstruction 1.png|400]]
+
+---
+## Comparison
+![[Reconstruction 2.png|400]]
+
+---
+
+## Coding Procedure
+- After auto-encoding, we have a fixed-size tensor $c \in [-1,1]^{C \times Y \times X}$
++ **Goal:** map $c$ to $e \in {0,1}^{\ell(e)}$
++ Achieve a high efficiency by exploiting redundancy injected into $c$ by $\mathscr{R}$.
+
+---
+
+## Bitplane Decomposition
++ Transform $c$ into a binary tensor $b \in {0,1}^{B \times C \times Y \times X}$ by decomposing it into $B$ bitplanes.
++ Maps each value $c_{chw}$ into its binary expansion $b_{1chw},\cdots,b_{Bchw}$ of $B$ bits.
++ Lossy operation.
++ $B=6$
+
+note:
+- Lossy since the precision of each value is truncated.
+- B=6 used in practice.
+
+---
+## Adaptive Entropy Coding (AEC)
++ Maps binary tensor $b$ into bitstream $e$. 
++ $\forall b_{bcyx} \in b:\ \mathbb{P}[b_{bcyx} = 1 \vert C \ ]$
++ Leverage the structure and patterns in the data to represent it with fewer bits.
+
+note:
+- Train a classifier to predict the activation of each bit $b_{bcyx}$ by considering the bits it has seen before ($C$ is the context).
+
+---
+## Adaptive Code-length Regularization
++ Regularizer reduces entropy of $b$.
++ Lower entropy = more predictable patterns.
++ Distributes bits in a code-layer ($\hat{c}$) to be increasingly sparse as it iterates through the bitplanes.
+
+$\mathscr{R}(\hat{c}) = \frac{\alpha_i}{CYX} \displaystyle\sum_{cyx}^{} log \vert \hat{c}_{cyx} \vert$
+<!-- element class="fragment" data-fragment-index="4" -->
+
+$\mathbb{E}_{\hat{c}} = [ \ell(e) ] \rightarrow \ell^{\text{target}}$
+
+<!-- element class="fragment" data-fragment-index="6" -->
+
+
+note:
+- More predictable patterns allows for more efficient compression.
+- Adjust scalar $\alpha_i$ to get the average code-length to match target.
+- Do this by being more/less aggressive in reducing entropy.
